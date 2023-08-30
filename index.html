@@ -5,41 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Calculator</title>
-   
 </head>
 <body>
     <div class="container">
         <div class="container-calculator">
-            <div>
-                <input type="text" name="ans" id="ans">
+            <div class="result">
+                <p id="display">0</p>
             </div>
             <div>
                 <div>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>/</button>
+                    <button id="seven" onclick="number(7)">7</button>
+                    <button id="eight" onclick="number(8)">8</button>
+                    <button id="nine" onclick="number(9)">9</button>
+                    <button id="divide" onclick="symbol('/')">&#247;</button>
                 </div>
                 <div>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>*</button>
+                    <button id="four" onclick="number(4)">4</button>
+                    <button id="five" onclick="number(5)">5</button>
+                    <button id="six" onclick="number(6)">6</button>
+                    <button id="multiply" onclick="symbol('*')">&#215;</button>
                 </div>
                 <div>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>-</button>
+                    <button id="one" onclick="number(1)">1</button>
+                    <button id="two" onclick="number(2)">2</button>
+                    <button id="three" onclick="number(3)">3</button>
+                    <button id="minus" onclick="symbol('-')">-</button>
                 </div><div>
                     <button id="on" >AC</button>
-                    <button>0</button>
-                    <button>=</button>
-                    <button>+</button>
+                    <button id="zero" onclick="number(0)">0</button>
+                    <button id="equal" onclick="result('=')">=</button>
+                    <button id="plus" onclick="symbol('+')">+</button>
                 </div>
             </div>
         </div>
     </div>
     
+    <script src="./js/scripts.js"></script>
+
 </body>
 </html>

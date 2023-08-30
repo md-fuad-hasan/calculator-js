@@ -17,14 +17,20 @@
 
 }
 
-input{
+.result{
     width: 96%;
     margin: 5px auto;
-    height: 35px;
+    height: 40px;
     display: block;
     border: none;
     box-shadow: 10px 10px 10px #eee, -5px -5px 10px #eee;
-
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+p{
+    padding-right: 5px;
+    font-size: 20px;
 }
 
 button{
